@@ -18,9 +18,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   bool isTestDevice = true;
 
   HomeBloc() : super(HomeInitial()) {
-    on<HomeEvent>((event, emit) {
-      // TODO: implement event handler
-    });
+    on<HomeEvent>((event, emit) {});
   }
 
   void init() {
