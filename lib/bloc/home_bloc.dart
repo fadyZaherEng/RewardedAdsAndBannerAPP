@@ -123,13 +123,14 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   Widget buildBannerAd() {
     if (isBannerAdReady) {
       return Align(
-          alignment: Alignment.bottomCenter,
-          child: Container(
-            color: Colors.green[100],
-            height: _bannerAd.size.height.toDouble(),
-            width: _bannerAd.size.width.toDouble(),
-            child: AdWidget(ad: _bannerAd),
-          ));
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          color: Colors.green[100],
+          height: _bannerAd.size.height.toDouble(),
+          width: _bannerAd.size.width.toDouble(),
+          child: AdWidget(ad: _bannerAd),
+        ),
+      );
     } else {
       return Container();
     }

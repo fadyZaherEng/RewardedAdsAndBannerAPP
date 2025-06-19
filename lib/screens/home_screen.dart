@@ -26,6 +26,7 @@ class HomeScreen extends StatelessWidget {
               const Text("Banner Ad"),
               const Spacer(),
               bloc.buildBannerAd(),
+              const SizedBox(height: 50),
             ],
           ),
         );
