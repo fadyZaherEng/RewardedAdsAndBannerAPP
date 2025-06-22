@@ -17,9 +17,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   int credits = 0;
   bool isTestDevice = true;
 
-  HomeBloc() : super(HomeInitial()) {
-    on<HomeEvent>((event, emit) {});
-  }
+  HomeBloc() : super(HomeInitial());
 
   void init() {
     MobileAds.instance.updateRequestConfiguration(
